@@ -16,7 +16,7 @@
   * [Send multi-channel message via Zalo and SMS](esms-api/send-sms-api/send-multi-channel-message-via-zalo-and-sms.md)
   * [Send personized message via Zalo](esms-api/send-sms-api/send-personized-message-via-zalo.md)
   * [Send Zalo Message Consulting in text form](esms-api/send-sms-api/tin-zalo-tu-van.md)
-  * [Copy of Send Zalo Consulting message](esms-api/send-sms-api/tin-zalo-tu-van-1.md)
+  * [Send Zalo Message with attached photo](esms-api/send-sms-api/tin-zalo-tu-van-1.md)
   * [Copy of Send Zalo Consulting message](esms-api/send-sms-api/tin-zalo-tu-van-2.md)
   * [Send Zalo Trading message](esms-api/send-sms-api/send-zalo-trading-message.md)
   * [Send Zalo messages to request user's information](esms-api/send-sms-api/send-zalo-messages-to-request-users-information.md)
