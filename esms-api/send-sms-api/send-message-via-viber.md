@@ -33,6 +33,7 @@ curl --location 'https://rest.esms.vn/MainService.svc/json/Send_Multiple_Sms_OTT
         "{{Phone1}}","{{Phone2}}","{{Phone3}}"
     ],
     "IsSandBox": "{{IsSandBox}}",
+    "RequestId": "{{RequestId}}",
     "CallbackUrl": "{{CallbackUrl}}"
 }'
 ```

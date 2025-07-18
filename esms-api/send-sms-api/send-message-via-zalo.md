@@ -36,6 +36,7 @@ curl --location 'https://rest.esms.vn/MainService.svc/json/SendZaloMessage_V5_po
     "campaignid": "{{Campaignid}}",
     "Sandbox": "{{Sandbox}}",
     "CallbackUrl": "{{CallbackUrl}}",
+    "RequestId": "{{RequestId}}",
     "SendingMode":"1"
 }'
 ```

@@ -16,6 +16,7 @@ curl --location 'https://rest.esms.vn/MainService.svc/json/SendMultipleMessage_V
 --data-urlencode 'Apikey={{ApiKey}}' \
 --data-urlencode 'SecretKey={{SecretKey}}' \
 --data-urlencode 'SmsType=2' \
+--data-urlencode 'RequestId={{RequestId}}' \
 --data-urlencode 'Brandname={{Brandname}}'
 ```
 
