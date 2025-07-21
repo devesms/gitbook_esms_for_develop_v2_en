@@ -5,7 +5,7 @@ This endpoint is used for sending SMS by batch (1 request for multiple SMS) via 
 It is ideal to send any kind of massive personalized announcement.
 
 {% hint style="warning" %}
-The API does not support sending free messages from the ZNS wallet, free messages will be post-verified and reconciled afterwards.
+This API does not support sending messages from free zns wallets, free messages will be checked and reconciled later.
 {% endhint %}
 
 ## HTTP request
