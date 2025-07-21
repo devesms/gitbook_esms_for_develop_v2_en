@@ -4,6 +4,10 @@ This endpoint is used for sending SMS by batch (1 request for multiple SMS) via 
 
 It is ideal to send any kind of massive personalized announcement.
 
+{% hint style="warning" %}
+The API does not support sending free messages from the ZNS wallet, free messages will be post-verified and reconciled afterwards.
+{% endhint %}
+
 ## HTTP request
 
 \
@@ -108,6 +112,5 @@ curl --location 'https://rest.esms.vn/MainService.svc/json/Send_zns_bulk_v4_post
 
 <table><thead><tr><th width="209">Parameter</th><th width="146">Type</th><th>Description</th></tr></thead><tbody><tr><td>CodeResult</td><td>string</td><td>Response code</td></tr><tr><td>Message</td><td>string</td><td>The error message if the request is invalid.</td></tr><tr><td>TotalSuccess</td><td>string</td><td>Number of successfully requests.</td></tr><tr><td>detail : CodeResult</td><td>string</td><td>The detail response code</td></tr><tr><td>detail : Phone</td><td>string</td><td>Phone number of receiver</td></tr><tr><td>detail : SMSID</td><td>string</td><td>The message id corresponding to the phone number.</td></tr></tbody></table>
 
-* _<mark style="color:yellow;">Note:</mark>_ This API does not allow sending except for zns free wallet whether the account is enabled or not, zns free news will be reconciled at the end of the month.
 * _<mark style="color:yellow;">**The detail of error code can refer at**</mark>_ [**Table of error codes**](../table-of-error-codes.md) **.**
 * _<mark style="color:yellow;">**Get the  sample of code for programing languagues to use in Postman refer at**</mark>_ [**Link  of code samples**](https://samplefordevelopers.esms.vn/#850974b9-12cf-46f5-946c-e8e15aa3585b)**.**
