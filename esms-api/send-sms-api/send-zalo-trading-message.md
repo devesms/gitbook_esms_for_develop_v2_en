@@ -7,19 +7,17 @@
 
 
 
-* **Content Type:** <mark style="color:orange;">application/json</mark>
+* **Content Type:** <mark style="color:orange;">text/plain</mark>
 * **Response Type:** <mark style="color:orange;">application/json</mark>
 
 ```json
 curl --location 'https://rest.esms.vn/mainservice.svc/json/SendZaloFollowerMessage_V5_post_json/' \
---header 'Content-Type: application/json' \
+--header 'Content-Type: text/plain' \
 --data '{
     "ApiKey": "{{ApiKey}}",
     "SecretKey": "{{SecretKey}}",
     "OAID": "{{OAID}}",
-    "CallbackUrl": "{{CallbackUrl}}",
-    "RequestId": "{{RequestId}}",
-    "Sandbox":0,
+    "RequestId": "96accf59-0c41-4bc7-a5c4-4a466c2e41c2", 
     "Payload": {
         "recipient": {
             "user_id": "{{user_id}}"
@@ -28,96 +26,77 @@ curl --location 'https://rest.esms.vn/mainservice.svc/json/SendZaloFollowerMessa
             "attachment": {
                 "type": "template",
                 "payload": {
-                    "template_type": "{{template_type}}",
-                    "language": "{{language}}",
+                    "template_type": "transaction_order",
+                    "language": "VI",
                     "elements": [
                         {
-                            "image_url": "{{image_url}}",
+                            "image_url": "https://minio.esms.vn/blogimg/agent-1/BlogImg/full_cccc34d4-3a46-4644-8613-1b226203c5d5.png",
                             "type": "banner"
                         },
                         {
                             "type": "header",
-                            "content": "{{content}}",
-                            "align": "{{align}}"
+                            "content": "Trạng thái đơn hàng",
+                            "align": "left"
                         },
                         {
                             "type": "text",
-                            "align": "{{align}}",
-                            "content": "{{content}}"
+                            "align": "left",
+                            "content": "• Cảm ơn bạn đã mua hàng tại cửa hàng.<br>• Thông tin đơn hàng của bạn như sau:"
                         },
                         {
                             "type": "table",
                             "content": [
                                 {
-                                    "value": "{{value}}",
-                                    "key": "{{key}}"
+                                    "value": "eSMS-001",
+                                    "key": "Mã khách hàng"
                                 },
                                 {
-                                    "value": "{{value}}",
-                                    "key": "{{key}}"
+                                    "style": "yellow",
+                                    "value": "Đang giao",
+                                    "key": "Trạng thái"
                                 },
                                 {
-                                    "style": "{{style}}",
-                                    "value": "{{value}}",
-                                    "key": "{{key}}"
-                                },
-                                {
-                                    "value": "{{value}}",
-                                    "key": "{{key}}"
-                                },
-                                {
-                                    "value": "{{value}}",
-                                    "key": "{{key}}"
-                                },
-                                {
-                                    "value": "{{value}}",
-                                    "key": "{{key}}"
+                                    "value": "250,000đ",
+                                    "key": "Giá tiền"
                                 }
                             ]
                         },
                         {
                             "type": "text",
-                            "align": "{{align}}",
-                            "content": "{{content}}"
+                            "align": "center",
+                            "content": "📲 Lưu ý điện thoại. Xin cảm ơn!"
                         }
                     ],
                     "buttons": [
                         {
-                            "title": "{{title}}",
-                            "image_icon": "{{image_icon}}",
+                            "title": "Kiểm tra lộ trình",
+                            "image_icon": "https://img.icons8.com/?size=100&id=kJlyCVWJrclv&format=png&color=000000",
                             "type": "oa.open.url",
                             "payload": {
-                                "url": "{{url}}"
+                                "url": "https://esms.vn/huong-dan/huong-dan-tich-hop/huong-dan-tich-hop-api-cua-esms-vao-website"
                             }
                         },
                         {
-                            "title": "{{title}}",
-                            "image_icon": "{{image_icon}}",
-                            "type": "oa.query.show",
-                            "payload": "{{payload}}"
-                        },
-                        {
-                            "title": "{{title}}",
-                            "type": "oa.open.sms",
+                            "title": "Xem lại giỏ hàng",
+                            "image_icon": "https://img.icons8.com/?size=100&id=S2Z1vzGMFT1v&format=png&color=000000",
+                            "type": "oa.open.url",
                             "payload": {
-                                "content": "{{content}}",
-                                "phone_code": "{{phone_code}}"
+                                "url": "https://esms.vn/huong-dan/huong-dan-su-dung"
                             }
                         },
-                    
                         {
-                        "title": "{{title}}",
-                        "image_icon": "{{image_icon}}",
-                        "type": "oa.open.phone",
-                        "payload": {
-                            "phone_code": "{{phone_code}}"
+                            "title": "Liên hệ tổng đài",
+                            "image_icon": "https://img.icons8.com/?size=100&id=KKBDB20a4V6t&format=png&color=000000",
+                            "type": "oa.open.phone",
+                            "payload": {
+                                "phone_code": "0901888484"
+                            }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         }
     }
-}
 }'
 ```
 
