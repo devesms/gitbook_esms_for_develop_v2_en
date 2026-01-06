@@ -1,6 +1,6 @@
 # Get ZNS status information
 
-This is a function used to access ZNS status information.
+This is a function used to retrieve ZNS status information.
 
 ## HTTP request
 
