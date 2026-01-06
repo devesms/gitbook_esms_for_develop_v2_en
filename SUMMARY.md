@@ -43,6 +43,7 @@
   * [Purchase OA package](esms-api/retrive-and-register-functions/purchase-oa-package.md)
   * [Registering the Zalo template](esms-api/retrive-and-register-functions/ham-dang-ky-template-zalo.md)
   * [Registering SMS template](esms-api/retrive-and-register-functions/registering-sms-template.md)
+  * [Get ZNS status information](esms-api/retrive-and-register-functions/get-zns-status-information.md)
 * [Other APIs](esms-api/other-apis/README.md)
   * [Send customer care message using GET](esms-api/other-apis/send-customer-care-message-using-get.md)
   * [Send customer care message using POST X-Form](esms-api/other-apis/send-customer-care-message-using-post-x-form.md)
