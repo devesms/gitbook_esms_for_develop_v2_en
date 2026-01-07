@@ -2,7 +2,7 @@
 
 This function is used to retrieve the state of the ZNS message.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Note: The speed limit for this API is 30 requests per second.**
 {% endhint %}
 
