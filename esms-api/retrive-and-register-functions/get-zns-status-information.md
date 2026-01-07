@@ -66,4 +66,4 @@ curl --location 'http://rest.esms.vn/MainService.svc/json/GetZaloMessageStatus' 
 | status         | int    | Status of the ZNS notification.                                                                                                                                                                                                                                |
 
 * _<mark style="color:yellow;">**The detail of error code can refer at**</mark>_ [**Table of error codes**](../table-of-error-codes.md) **.**
-* _<mark style="color:yellow;">**Get the  sample of code for programing languagues to use in Postman refer at**</mark>_ [**Link  of code samples**](https://samplefordevelopers.esms.vn/#850974b9-12cf-46f5-946c-e8e15aa3585b)**.**
+* _<mark style="color:yellow;">**Get the  sample of code for programing languagues to use in Postman refer at**</mark>_ [**Link  of code samples**](https://samplefordevelopers.esms.vn/#cab8ca81-d83a-46e5-ab19-b58f29a6f656)**.**
