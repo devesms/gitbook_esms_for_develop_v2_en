@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Send message via Zalo by UID
 
 ## HTTP request
