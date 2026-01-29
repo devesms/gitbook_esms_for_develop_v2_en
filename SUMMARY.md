@@ -11,6 +11,7 @@
   * [Send OTP/Customer care message](esms-api/send-sms-api/send-otp-customer-care-message.md)
   * [Send adveritising message](esms-api/send-sms-api/advertising-message.md)
   * [Send message via Zalo](esms-api/send-sms-api/send-message-via-zalo.md)
+  * [Send message via Zalo by UID](esms-api/send-sms-api/send-message-via-zalo-by-uid.md)
   * [Send message via Viber](esms-api/send-sms-api/send-message-via-viber.md)
   * [Send fixed number with cheap price](esms-api/send-sms-api/send-fixed-number-with-cheap-price.md)
   * [Send multi-channel message via Zalo and SMS](esms-api/send-sms-api/send-multi-channel-message-via-zalo-and-sms.md)
